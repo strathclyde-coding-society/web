@@ -1,5 +1,6 @@
 import Member from '../components/Member';
 import Nav from '../components/Nav';
+import Background from '../components/Background';
 
 const members = [
     {name: "Mohammed Alosh", role: "President & Founder", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "https://github.com/k9mil", linkedin: "https://www.linkedin.com/in/kamilzak00/", twitter: "https://twitter.com/alsokamil"},
@@ -15,8 +16,8 @@ function Team() {
     return (
       <div className="bg-black w-screen h-screen overflow-x-hidden flex flex-col items-center space-y-2 text-gray-400">
           <Nav />
-          <div className="relative max-w-2xl flex flex-col justify-center space-y-16">
-            <div className="bg-gradient overflow-hidden"></div>
+          <div className="max-w-2xl flex flex-col justify-center space-y-16">
+            <Background />
               <div className="flex flex-col justify-center space-y-10 z-10">
                   <div className="flex flex-col items-center">
                       <div className="text-5xl leading-normal font-bold text-gray-50">

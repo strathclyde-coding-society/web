@@ -1,11 +1,12 @@
 import Nav from '../components/Nav';
+import Background from '../components/Background';
 
 function Home() {
     return (
         <div className="bg-black w-screen h-screen overflow-x-hidden flex flex-col items-center space-y-2 text-gray-400">
             <Nav />
             <div className="relative max-w-2xl flex flex-col justify-center space-y-16">
-                <div className="bg-gradient overflow-hidden"></div>
+                <Background />
                 <div className="flex flex-col justify-center space-y-10 z-10">
                     <div className="flex flex-col items-center">
                         <div className="text-5xl leading-normal font-bold text-gray-50">

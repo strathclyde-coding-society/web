@@ -1,5 +1,6 @@
 import Nav from '../components/Nav';
 import Ticket from '../components/Ticket';
+import Background from '../components/Background';
 
 const tickets = [
     {title: "Lorem ipsum", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel enim nec purus ultrices lobortis sodales quis odio. Sed rutrum ornare mollis. Nullam sed lacus."},
@@ -13,7 +14,7 @@ function Tickets() {
         <div className="bg-black w-screen h-screen overflow-x-hidden flex flex-col items-center space-y-2 text-gray-400">
             <Nav />
             <div className="relative max-w-2xl flex flex-col justify-center space-y-16">
-                <div className="bg-gradient overflow-hidden"></div>
+                <Background />
                 <div className="flex flex-col justify-center space-y-10 z-10">
                     <div className="flex flex-col items-center">
                         <div className="text-5xl leading-normal font-bold text-gray-50">
