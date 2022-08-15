@@ -2,6 +2,8 @@ import Member from '../components/Member';
 import Nav from '../components/Nav';
 import Background from '../components/Background';
 
+import React, { useEffect } from 'react';
+
 const members = [
     {name: "Mohammed Alosh", role: "President & Founder", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "https://github.com/k9mil", linkedin: "https://www.linkedin.com/in/kamilzak00/", twitter: "https://twitter.com/alsokamil"},
     {name: "Ayushi Badiyani", role: "Vice President", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "https://github.com/k9mil", linkedin: "https://www.linkedin.com/in/kamilzak00/", twitter: "https://twitter.com/alsokamil"},
@@ -12,7 +14,14 @@ const members = [
     {name: "Gio Matonti", role: "Social Coordinator", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "https://github.com/k9mil", linkedin: "https://www.linkedin.com/in/kamilzak00/", twitter: "https://twitter.com/alsokamil"},
 ]
 
+function Title() {
+    useEffect(() => {
+        document.title = 'Meet the Committee';
+    });
+  }
+
 function Team() {
+    Title()
     return (
       <div className="bg-black w-screen h-screen overflow-x-hidden flex flex-col items-center space-y-2 text-gray-400">
           <Nav />

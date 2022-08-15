@@ -2,6 +2,8 @@ import Nav from '../components/Nav';
 import Ticket from '../components/Ticket';
 import Background from '../components/Background';
 
+import React, { useEffect } from 'react';
+
 const tickets = [
     {title: "Lorem ipsum", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel enim nec purus ultrices lobortis sodales quis odio. Sed rutrum ornare mollis. Nullam sed lacus."},
     {title: "Lorem ipsum", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel enim nec purus ultrices lobortis sodales quis odio. Sed rutrum ornare mollis. Nullam sed lacus."},
@@ -9,7 +11,14 @@ const tickets = [
     {title: "Lorem ipsum", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel enim nec purus ultrices lobortis sodales quis odio. Sed rutrum ornare mollis. Nullam sed lacus."},
 ]
 
+function Title() {
+    useEffect(() => {
+        document.title = 'Tickets';
+    });
+}
+
 function Tickets() {
+    Title()
     return (
         <div className="bg-black w-screen h-screen overflow-x-hidden flex flex-col items-center space-y-2 text-gray-400">
             <Nav />

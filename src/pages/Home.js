@@ -1,7 +1,16 @@
 import Nav from '../components/Nav';
 import Background from '../components/Background';
 
+import React, { useEffect } from 'react';
+
+function Title() {
+    useEffect(() => {
+        document.title = 'Home';
+    });
+}
+
 function Home() {
+    Title()
     return (
         <div className="bg-black w-screen h-screen overflow-x-hidden flex flex-col items-center space-y-2 text-gray-400">
             <Nav />
