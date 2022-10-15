@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../static/logo.png';
+import { motion } from "framer-motion";
 
 import { Link } from 'react-router-dom'
 
@@ -9,15 +10,30 @@ function Nav() {
             <div className="sticky top-0 z-50 max-h-1/6 w-screen flex flex-row justify-between py-2 px-20 bg-opacity-80 bg-gray-750 border-gray-550 backdrop-blur">
             <div className="flex mr-5 h-full text-xs">
                 <Link to="/">
-                    <img src={logo} className="w-16 h-16"></img>
+                    <motion.img
+                        className="w-16 h-16"
+                        src={logo} 
+                        initial={{opacity: 0, y:35}} 
+                        animate={{opacity: 1, y:0, transition: {type: "spring", stiffness: 100, duration: 0.65}}}
+                        whileHover={{scale: 1.2}}
+                        whileTap={{scale: 0.8}}
+                    />
                 </Link>
             </div>
             <div className="flex flex-row h-full">
                 <ul className="flex flex-row justify-center items-center space-x-16 text-gray-50">
-                    <li><Link to="/" className="hover:text-gray-400 transition duration-300 ease-in-out">Home</Link></li>
-                    <li><Link to="/tickets" className="hover:text-gray-400 transition duration-300 ease-in-out">Tickets</Link></li>
-                    <li><Link to="/sponsors" className="hover:text-gray-400 transition duration-300 ease-in-out">Sponsors</Link></li>
-                    <li><Link to="/team" className="hover:text-gray-400 transition duration-300 ease-in-out">Meet the Committee</Link></li>
+                    <motion.li initial={{opacity: 0, y:-35}} animate={{opacity: 1, y:0}} transition={{type: "spring", stiffness: 100, duration: 0.65}}>
+                        <Link to="/" className="hover:text-gray-400 transition duration-300 ease-in-out">Home</Link>
+                    </motion.li>
+                    <motion.li initial={{opacity: 0, y:-35}} animate={{opacity: 1, y:0}} transition={{type: "spring", stiffness: 100, duration: 0.65}}>
+                        <Link to="/tickets" className="hover:text-gray-400 transition duration-300 ease-in-out">Tickets</Link>
+                    </motion.li>
+                    <motion.li initial={{opacity: 0, y:-35}} animate={{opacity: 1, y:0}} transition={{type: "spring", stiffness: 100, duration: 0.65}}>
+                        <Link to="/sponsors" className="hover:text-gray-400 transition duration-300 ease-in-out">Sponsors</Link>
+                    </motion.li>
+                    <motion.li initial={{opacity: 0, y:-35}} animate={{opacity: 1, y:0}} transition={{type: "spring", stiffness: 100, duration: 0.65}}>
+                        <Link to="/team" className="hover:text-gray-400 transition duration-300 ease-in-out">Meet the Committee</Link>
+                    </motion.li>
                 </ul>
             </div>
             <div className="flex flex-row justify-start items-center">
