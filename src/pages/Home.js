@@ -1,55 +1,83 @@
 import Nav from '../components/Nav';
 import Background from '../components/Background';
 
+import logo from '../static/logo.png';
+
 import React, { useEffect } from 'react';
+
 import { motion } from "framer-motion";
+
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Title() {
     useEffect(() => {
-        document.title = 'Home';
+        document.title = 'SCS - Strathclyde Coding Society';
     });
 }
 
 function Home() {
     Title()
     return (
-        <div className="bg-black w-screen h-screen overflow-x-hidden flex flex-col items-center space-y-2 text-gray-400">
+        <section className="bg-black w-screen h-screen overflow-x-hidden flex flex-col items-center text-gray-400">
             <Nav />
-            <div className="relative max-w-2xl flex flex-col justify-center space-y-16">
-                <Background />
-                <div className="flex flex-col justify-center space-y-10 z-10">
-                    <div className="flex flex-col items-center">
-                        <div className="text-5xl leading-normal font-bold text-gray-50">
-                            <motion.h1 initial={{opacity: 0, y:-50}} animate={{opacity: 1, y:0}} transition={{type: "spring", stiffness: 200, duration: 0.78}}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing.
-                            </motion.h1>
-                        </div>
+            <div className="flex flex-col justify-center items-center h-[80rem] max-w-[60rem]">
+                <div className="flex-row grid grid-flow-col gap-4">
+                    <div className="row-span-3">
+                        <motion.img 
+                            className="w-44 h-44" 
+                            src={logo}
+                            initial={{opacity: 0, y:35}} 
+                            animate={{opacity: 1, y:0, transition: {type: "spring", stiffness: 100, duration: 0.65}}}>
+                        </motion.img>
                     </div>
-                    <div className="flex flex-col justify-center">
-                        <div className="space-y-4 leading-relaxed">
-                            <motion.p initial={{opacity: 0, x:-55}}  animate={{opacity: 1, x:0}} transition={{type: "spring", stiffness: 175, duration: 0.83}}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt dui at dui rutrum, nec posuere leo bibendum. Suspendisse et imperdiet neque. Aenean sit amet dui sed enim consequat suscipit at in augue. Cras tempor nisl vitae urna auctor, non faucibus justo pulvinar. Morbi a lorem viverra, accumsan turpis et, fringilla justo. Donec quis mollis ante, sed tincidunt nulla. Etiam semper suscipit felis, sed congue metus porta ac.
-                            </motion.p>
-                            <motion.p initial={{opacity: 0, x:55}}  animate={{opacity: 1, x:0}} transition={{type: "spring", stiffness: 175, duration: 0.88}}>
-                                Cras scelerisque pharetra arcu, auctor lacinia velit vehicula a. Suspendisse fringilla mi ligula, et vestibulum elit rutrum ut. Quisque lobortis volutpat enim quis mattis. Fusce vel blandit velit. Mauris ut posuere augue, et tincidunt risus. Donec non orci nec diam hendrerit maximus. Aliquam lobortis id felis id rutrum.
-                            </motion.p>
-                        </div>
+                    <div className="row-span-1 auto-cols-max text-5xl leading-normal font-bold text-gray-50">
+                        <h1>Strathclyde Coding Society</h1>
                     </div>
-                    <hr className="my-32 border-purple-000 opacity-20 border-1"></hr>
-                    <div className="flex flex-col justify-center">
-                        <div className="space-y-4 leading-relaxed">
-                            <motion.p initial={{opacity: 0, x:-55}}  animate={{opacity: 1, x:0}} transition={{type: "spring", stiffness: 175, duration: 0.93}}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt dui at dui rutrum, nec posuere leo bibendum. Suspendisse et imperdiet neque. Aenean sit amet dui sed enim consequat suscipit at in augue. Cras tempor nisl vitae urna auctor, non faucibus justo pulvinar. Morbi a lorem viverra, accumsan turpis et, fringilla justo. Donec quis mollis ante, sed tincidunt nulla. Etiam semper suscipit felis, sed congue metus porta ac.
-                            </motion.p>
-                            <motion.p initial={{opacity: 0, x:55}}  animate={{opacity: 1, x:0}} transition={{type: "spring", stiffness: 175, duration: 0.98}}>
-                                Cras scelerisque pharetra arcu, auctor lacinia velit vehicula a. Suspendisse fringilla mi ligula, et vestibulum elit rutrum ut. Quisque lobortis volutpat enim quis mattis. Fusce vel blandit velit. Mauris ut posuere augue, et tincidunt risus. Donec non orci nec diam hendrerit maximus. Aliquam lobortis id felis id rutrum.
-                            </motion.p>
-                        </div>
+                    <div className="row-span-1 auto-cols-max">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis cupiditate consequatur ab quidem expedita corrupti modi eum, voluptates, sit sequi animi! Magni vero quaerat doloremque perspiciatis sint inventore. Molestiae, animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, explicabo?</p>
                     </div>
-                    <hr className="my-32 border-purple-000 opacity-20 border-1"></hr>
+
+                    <div className="row-span-1 auto-cols-max mt-2"> 
+                          
+                                <a href="https://www.strathunion.com/groups/find-a-society/society/coding/" target="_blank" rel="noopener" aria-label="strathclyde coding society">
+                                    <button className="text-sm text-white font-semibold pt-[10px] pb-[10px] pl-[40px] pr-[40px] rounded-md opacity-70 hover:opacity-100 transition duration-300 ease-in-out bg-gradient-to-r from-blue-700 to-purple-700">
+                                        Learn More
+                                    </button>
+                                </a>
+
+                        
+
+                          
+
+
+
+
+                       
+                        
+
+                    </div>
+
+                 
                 </div>
+
+
+                
+
+
+
+
+              
+
+
+
+
+
             </div>
-        </div> 
+
+
+            <i className="bi bi-chevron-down m-5"></i>
+
+        </section> 
     );
   }
   
