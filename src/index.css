@@ -8,14 +8,6 @@
     }
 }
 
-.bg-gradient {
-    background: url(../src/static/bloom.png) no-repeat center center;
-    background-size: contain;
-    position: absolute;
-    margin-top: -375px;
-    opacity: 0.7;
-}
-
 ::-webkit-scrollbar {
     display: none;
 }
