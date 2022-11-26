@@ -1,9 +1,9 @@
-import Nav from './Nav.js';
-import Header from './Header.js';
-import About from './About.js';
-import Events from './Events.js';
-import Committee from './Commitee.js';
-import Footer from './Footer.js';
+import Nav from './Nav';
+import Header from './Header';
+import About from './About';
+import Events from './Events';
+import Committee from './Commitee';
+import Footer from './Footer';
 
 import React, { useEffect } from 'react';
 
@@ -17,12 +17,12 @@ function Page() {
     Title()
     return (
         <div className="w-screen h-screen overflow-x-hidden text-gray-400">
-            <Nav />
-            <Header />
-            <About />
-            <Events />
-            <Committee />
-            <Footer />
+            <Nav/>
+            <Header/>
+            <About/>
+            <Events/>
+            <Committee/>
+            <Footer/>
         </div>
     );
   }

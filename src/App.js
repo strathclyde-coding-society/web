@@ -13,10 +13,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Page />} />
-        <Route path="/403" element={<Error_403 />} />
-        <Route path="*" element={<Error_404 />} />
-        <Route path="/500" element={<Error_500 />} />
+        <Route path="/" element={<Page/>} />
+        <Route path="/403" element={<Error_403/>} />
+        <Route path="*" element={<Error_404/>}/>
+        <Route path="/500" element={<Error_500/>} />
       </Routes>
     </Router>
   );

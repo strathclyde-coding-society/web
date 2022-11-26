@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from '../components/Button';
 import logo from '../static/logo.png';
 
 function Nav() {
@@ -10,11 +11,13 @@ function Nav() {
                     <img className="h-[4.5rem] w-[4.5rem] mr-3" src={logo} alt="logo"/>
                 </a>
                 <div className="flex md:order-2">
-                    <button className="transform rounded-md bg-indigo-600 px-5 py-3 font-medium text-white transition-colors hover:bg-indigo-700" type="button">Lorem</button>
-                    <button className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" data-collapse-toggle="nav-burger" type="button" aria-controls="nav-burger" aria-expanded="false">
+                    <Button content="Learn more" href="#" size="medium"/>
+                    {/* Hamburger start */}
+                    <button className="inline-flex items-center p-2 text-sm text-gray-400 rounded-lg md:hidden ml-2" data-collapse-toggle="nav-burger" type="button" aria-controls="nav-burger" aria-expanded="false">
                         <span className="sr-only">Open main menu</span>
-                        <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <i className="bi bi-list w-6 h-6 text-lg"></i>
                     </button>
+                    {/* Hamburger end */}
                 </div>
                 <div id="nav-burger" className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
                     <ul className="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium">
