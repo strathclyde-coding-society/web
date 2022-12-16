@@ -4,6 +4,14 @@ import Button from '../components/Button';
 import logo from '../static/logo.png';
 
 function Nav() {
+    const toggle = () => {
+        var menu = document.getElementById('nav-burger');
+        if(menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+        }
+    }
     return (
         <nav className="bg-black px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0">
             <div className="container flex flex-wrap items-center justify-between mx-auto">
@@ -13,7 +21,7 @@ function Nav() {
                 <div className="flex md:order-2">
                     <Button content="Learn more" href="#" size="medium"/>
                     {/* Hamburger start */}
-                    <button className="inline-flex items-center p-2 text-sm text-gray-400 rounded-lg md:hidden ml-2" data-collapse-toggle="nav-burger" type="button" aria-controls="nav-burger" aria-expanded="false">
+                    <button className="inline-flex items-center p-2 text-sm text-gray-400 rounded-lg md:hidden ml-2" type="button" onClick={toggle}>
                         <span className="sr-only">Open main menu</span>
                         <i className="bi bi-list w-6 h-6 text-lg"></i>
                     </button>
