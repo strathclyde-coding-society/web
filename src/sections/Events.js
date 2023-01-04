@@ -1,6 +1,9 @@
 import React from 'react';
+import Modal from 'react-modal';
 
 import Button from '../components/Button';
+import Event from '../components/Event';
+import EventFullDetails from '../components/EventFullDetails';
 
 const events = [
     {title: "Lorem ipsum", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reiciendis modi reprehenderit.", href: "#"},
@@ -11,15 +14,32 @@ const events = [
 ];
 
 function Events() {
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+    const [event, setevent] = React.useState([]);
+    function openModal() {
+        setIsOpen(true);
+      }
+      
+      function moreDetails(props) {
+        setevent(props); 
+        openModal()
+      }
+    
+      function afterOpenModal() {
+        // references are now sync'd and can be accessed.
+        subtitle.style.color = '#000';
+      }
+    
+      function closeModal() {
+        setIsOpen(false);
+      }
+    
+    
     const GridEvents = () => {
         return (
             events.map(event => {
                 return (
-                    <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-slate-400 border-opacity-60">
-                        <h2 className="text-lg sm:text-xl text-slate-50 font-medium title-font mb-2">{event.title}</h2>
-                        <p className="leading-relaxed text-slate-400 mb-4">{event.description}</p>
-                        <Button content="Learn more" href={event.href} size="small"/>
-                    </div>
+                    <Event event={event} moreDetails={moreDetails}/>
                 )
             })
         );
@@ -45,8 +65,8 @@ function Events() {
             <div className="flex flex-col justify-center h-full w-[60rem] gap-2">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
-                        <h2 className="text-xs text-indigo-600 tracking-widest font-medium title-font mb-1">Lorem ipsum dolor sit amet.</h2>
-                        <h1 className="text-2xl font-medium title-font mb-4 text-slate-50">Lorem ipsum dolor sit amet.</h1>
+                        <h2 className="text-xs text-indigo-600 tracking-widest font-medium title-font mb-1">Weekly SCS Events /more playful</h2>
+                        <h1 className="text-2xl font-medium title-font mb-4 text-slate-50">Upcoming Strathclyde Coding Events</h1>
                         <p className="md:w-2/3 w-1/3 mx-auto leading-relaxed text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita necessitatibus inventore ipsa, consequatur, vel libero voluptates nulla odio culpa quasi ratione. Odit minima natus eum perspiciatis mollitia molestiae iure.</p>
                     </div>
                     <div className="mb-20">
@@ -54,6 +74,16 @@ function Events() {
                             <TimelineEvents />
                         </ol>
                     </div>
+                    <Modal
+                    isOpen={modalIsOpen}
+                    onAfterOpen={afterOpenModal}
+                    onRequestClose={closeModal}
+                    className = "top-1/2 right-auto bottom-auto translate-x-1/2 translate-y-1/2 max-w-sm bg-black rounded-lg  items-center"
+                    overlayClassName = "bg-black/75 fixed left-0 right-0 top-0 bottom-0"
+                    contentLabel="Example Modal"s
+                    >
+                        <EventFullDetails event={event}/>
+                    </Modal>
                     <div className="flex flex-wrap">
                         <GridEvents />
                     </div>

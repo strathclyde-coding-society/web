@@ -6,7 +6,7 @@ function Header() {
     return (
         <header className="bg-black w-screen h-screen overflow-x-hidden flex flex-col items-center space-y-2">
             <div className="flex flex-col justify-center items-center h-[80rem] max-w-[60rem]">
-                <section className="py-24 flex items-center min-h-screen justify-center">
+                <section id="header" className="py-24 flex items-center min-h-screen justify-center">
                     <div className="mx-auto max-w-[43rem]">
                         <div className="text-center">
                             <h2 className="md:text-lg font-medium leading-8 text-indigo-600">Lorem ipsum dolor sit amet.</h2>
