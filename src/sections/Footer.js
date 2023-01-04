@@ -15,24 +15,7 @@ function Footer() {
                 </div>
                 <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
                     <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-mediumtracking-widest text-sm mb-3">Lorem</h2>
-                        <div className="list-none mb-10">
-                            <li>
-                                <a className="">Lorem, ipsum.</a>
-                            </li>
-                            <li>
-                                <a className="">Lorem, ipsum.</a>
-                            </li>
-                            <li>
-                                <a className="">Lorem, ipsum.</a>
-                            </li>
-                            <li>
-                                <a className="">Lorem, ipsum.</a>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-mediumtracking-widest text-sm mb-3">Lorem</h2>
+                        <h2 className="title-font font-medium tracking-widest text-sm mb-3">Lorem</h2>
                         <div className="list-none mb-10">
                             <li>
                                 <a className="">Lorem, ipsum.</a>
@@ -66,7 +49,24 @@ function Footer() {
                         </div>
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-mediumtracking-widest text-sm mb-3">Lorem</h2>
+                        <h2 className="title-font font-medium tracking-widest text-sm mb-3">Lorem</h2>
+                        <div className="list-none mb-10">
+                            <li>
+                                <a className="">Lorem, ipsum.</a>
+                            </li>
+                            <li>
+                                <a className="">Lorem, ipsum.</a>
+                            </li>
+                            <li>
+                                <a className="">Lorem, ipsum.</a>
+                            </li>
+                            <li>
+                                <a className="">Lorem, ipsum.</a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 className="title-font font-medium tracking-widest text-sm mb-3">Lorem</h2>
                         <div className="list-none mb-10">
                             <li>
                                 <a className="">Lorem, ipsum.</a>

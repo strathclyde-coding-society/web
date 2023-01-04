@@ -34,7 +34,6 @@ function Events() {
         setIsOpen(false);
       }
     
-    
     const GridEvents = () => {
         return (
             events.map(event => {
@@ -61,35 +60,38 @@ function Events() {
     }
 
     return (
-        <section id="events" className="bg-black w-screen overflow-x-hidden flex flex-col items-center">
-            <div className="flex flex-col justify-center h-full w-[60rem] gap-2">
-                <div className="container px-5 py-24 mx-auto">
-                    <div className="flex flex-col text-center w-full mb-20">
-                        <h2 className="text-xs text-indigo-600 tracking-widest font-medium title-font mb-1">Weekly SCS Events /more playful</h2>
-                        <h1 className="text-2xl font-medium title-font mb-4 text-slate-50">Upcoming Strathclyde Coding Events</h1>
-                        <p className="md:w-2/3 w-1/3 mx-auto leading-relaxed text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita necessitatibus inventore ipsa, consequatur, vel libero voluptates nulla odio culpa quasi ratione. Odit minima natus eum perspiciatis mollitia molestiae iure.</p>
-                    </div>
-                    <div className="mb-20">
-                        <ol className="relative border-l border-indigo-600">                  
-                            <TimelineEvents />
-                        </ol>
-                    </div>
-                    <Modal
-                    isOpen={modalIsOpen}
-                    onAfterOpen={afterOpenModal}
-                    onRequestClose={closeModal}
-                    className = "top-1/2 right-auto bottom-auto translate-x-1/2 translate-y-1/2 max-w-sm bg-black rounded-lg  items-center"
-                    overlayClassName = "bg-black/75 fixed left-0 right-0 top-0 bottom-0"
-                    contentLabel="Example Modal"s
-                    >
-                        <EventFullDetails event={event}/>
-                    </Modal>
-                    <div className="flex flex-wrap">
-                        <GridEvents />
+        <>
+            <Modal
+            isOpen={modalIsOpen}
+            onAfterOpen={afterOpenModal}
+            onRequestClose={closeModal}
+            className = "absolute inset-60 m-5 bg-black rounded-lg items-center border-indigo-600 border-solid border-2"
+            overlayClassName = "bg-black/75 fixed left-0 right-0 top-0 bottom-0"
+            contentLabel="Example Modal"
+            >
+                <EventFullDetails event={event}/>
+            </Modal>
+            <section id="events" className="bg-black w-screen overflow-x-hidden flex flex-col items-center">
+                <div className="flex flex-col justify-center h-full w-[60rem] gap-2">
+                    <div className="container px-5 py-24 mx-auto">
+                        <div className="flex flex-col text-center w-full mb-20">
+                            <h2 className="text-xs text-indigo-600 tracking-widest font-medium title-font mb-1">Weekly SCS Events /more playful</h2>
+                            <h1 className="text-2xl font-medium title-font mb-4 text-slate-50">Upcoming Strathclyde Coding Events</h1>
+                            <p className="md:w-2/3 w-1/3 mx-auto leading-relaxed text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita necessitatibus inventore ipsa, consequatur, vel libero voluptates nulla odio culpa quasi ratione. Odit minima natus eum perspiciatis mollitia molestiae iure.</p>
+                        </div>
+                        <div className="mb-20">
+                            <ol className="relative border-l border-indigo-600">                  
+                                <TimelineEvents />
+                            </ol>
+                        </div>
+                    
+                        <div className="flex flex-wrap">
+                            <GridEvents />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
   }
   
