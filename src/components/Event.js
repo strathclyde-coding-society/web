@@ -11,7 +11,7 @@ function Event(props) {
         <p className="leading-relaxed text-slate-400 mb-4">{props.event.description}</p>
         {/* <Button content="Learn more" href={props.event.href} size="small"/> */}
         <button onClick={click}>yo</button>
-    </div>
+    </div>  
   )
 }
 

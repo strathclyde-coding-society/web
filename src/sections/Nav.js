@@ -5,7 +5,6 @@ import logo from '../static/logo.png';
 
 function Nav() {
     const toggle = () => {
-        console.log('hi');
         var menu = document.getElementById('nav-burger');
         if(menu.classList.contains('hidden')) {
             menu.classList.remove('hidden');
