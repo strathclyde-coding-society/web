@@ -65,7 +65,7 @@ function Events() {
             isOpen={modalIsOpen}
             onAfterOpen={afterOpenModal}
             onRequestClose={closeModal}
-            className = "absolute inset-60 m-5 bg-black rounded-lg items-center border-indigo-600 border-solid border-2"
+            className = "absolute inset-18 top-20 lg:inset-40 m-5 bg-black rounded-lg items-center border-indigo-600 border-solid border-2"
             overlayClassName = "bg-black/75 fixed left-0 right-0 top-0 bottom-0"
             contentLabel="Example Modal"
             >
