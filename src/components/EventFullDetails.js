@@ -4,10 +4,10 @@ import Button from '../components/Button';
 import image from '../assests/events/sample_img.jpg'
 
 function EventFullDetails(props) {
-
   console.log(props)
   //  {title: "CV Workshop", img: "../assests/events/sample_img.jpg", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9",maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem Workshop dolor sit:"},
   // ^ current data structure
+
   const hide_tickets = props.event.href != "#" ? "" : "hidden"
   //dynamically displays link button for events with tickets
   return (
