@@ -6,11 +6,12 @@ import Event from '../components/Event';
 import EventFullDetails from '../components/EventFullDetails';
 
 const events = [
-    {title: "Lorem ipsum", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reiciendis modi reprehenderit.", href: "#"},
-    {title: "Lorem ipsum", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reiciendis modi reprehenderit.", href: "#"},
-    {title: "Lorem ipsum", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reiciendis modi reprehenderit.", href: "#"},
-    {title: "Lorem ipsum", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reiciendis modi reprehenderit.", href: "#"},
-    {title: "Lorem ipsum", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reiciendis modi reprehenderit.", href: "#"},
+    {title: "CV Workshop", headline:"Ayo come sus this out", img: "../assests/events/sample_img.png", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
+    {title: "Refresher Social", headline:"Ayo come sus this out", img: "../assests/events/sample_img.png", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
+    {title: "AI Workshop", headline:"Ayo come sus this out", img: "../assests/events/sample_img.png", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
+    {title: "Coding Cafe with EME", headline:"Ayo come sus this out", img: "../assests/events/sample_img.png", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
+    {title: "Front-End Workshop", headline:"Ayo come sus this out", img: "../assests/events/sample_img.png", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
+    {title: "Back-End Workshop", headline:"Ayo come sus this out", img: "../assests/events/sample_img.png", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
 ];
 
 function Events() {
@@ -49,9 +50,9 @@ function Events() {
                 return (
                     <li className="mb-10 ml-4">
                         <div className="absolute w-3 h-3 bg-indigo-600 rounded-full mt-1.5 -left-1.5 border border-indigo-600"></div>
-                        <time className="mb-1 text-sm font-normal leading-none text-slate-400">Lorem, ipsum.</time>
+                        <time className="mb-1 text-sm font-normal leading-none text-slate-400">{event.date} : {event.time}</time>
                         <h3 className="text-lg font-semibold text-slate-50">{event.title}</h3>
-                        <p className="mb-4 text-base font-normal text-slate-400">{event.description}</p>
+                        <p className="mb-4 text-base font-normal text-slate-400">{event.headline}</p>
                         <Button content="Learn more" href={event.href} size="small"/>
                     </li>
                 )
@@ -69,7 +70,7 @@ function Events() {
             overlayClassName = "bg-black/75 fixed left-0 right-0 top-0 bottom-0"
             contentLabel="Example Modal"
             >
-                <EventFullDetails event={event}/>
+                <EventFullDetails event={event} close={closeModal}/>
             </Modal>
             <section id="events" className="bg-black w-screen overflow-x-hidden flex flex-col items-center">
                 <div className="flex flex-col justify-center h-full w-[60rem] gap-2">
