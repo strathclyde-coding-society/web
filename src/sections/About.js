@@ -12,9 +12,9 @@ function About() {
                             </div>
                             <div className="md:7/12 lg:w-6/12">
                                 <h2 className="text-xs text-indigo-600 tracking-widest font-medium title-font mb-1">Lorem ipsum dolor sit amet.</h2>
-                                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-slate-50">Lorem ipsum dolor sit amet.</h1>
-                                <p className="mt-6 leading-relaxed text-slate-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
-                                <p className="mt-4 leading-relaxed text-slate-400"> Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+                                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-slate-50">Who are we?</h1>
+                                <p className="mt-6 leading-relaxed text-slate-400">The Strathclyde Coding Society is a student led body that aims to encourage students from all backgrounds to increase their coding skills, we do this by hosting workshops and social events to help students connect with each other and industry!</p>
+                                <p className="mt-4 leading-relaxed text-slate-400"> Check out one of our events below!</p>
                             </div>
                         </div>
                     </div>

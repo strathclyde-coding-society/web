@@ -9,12 +9,12 @@ function Header() {
                 <section id="header" className="py-24 flex items-center min-h-screen justify-center">
                     <div className="mx-auto max-w-[43rem]">
                         <div className="text-center">
-                            <h2 className="md:text-lg font-medium leading-8 text-indigo-600">Lorem ipsum dolor sit amet.</h2>
-                            <h1 className="mt-3 md:text-[3.5rem] text-[2.75rem] font-bold leading-[3.5rem] md:leading-[4rem] tracking-tight text-slate-50">Lorem ipsum dolor&nbsp;sit amet consectetur.</h1>
-                            <p className="mt-3 md:text-lg text-sm leading-relaxed text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit obcaecati omnis blanditiis perspiciatis minus!</p>
+                            <h2 className="md:text-lg font-medium leading-8 text-indigo-600">04/03/23 | 14:00</h2>
+                            <h1 className="mt-3 md:text-[3.5rem] text-[2.75rem] font-bold leading-[3.5rem] md:leading-[4rem] tracking-tight text-slate-50">Grab your StrathHack Tickets today!</h1>
+                            <p className="mt-3 md:text-lg text-sm leading-relaxed text-slate-400">Assemble a team and join us for a fun 24 hours of programming and free pizza!</p>
                         </div>
                         <div className="mt-6 flex items-center justify-center gap-4">
-                            <Button content="Learn more" href="#" size="large"/>
+                            <Button content="Buy Tickets" href="https://www.eventbrite.com/e/strathhack-tickets-509350911287" size="large"/>
                         </div>
                     </div>
                 </section>
