@@ -1,18 +1,17 @@
 import React from 'react';
-import image from '../assests/members/sample_img.png'
 
 const members = [
-    {name: "Hamada Alosh", role: "President", img: image, description:"A 3rd year Software Engineering Student with a passion for networking and a like for functional programming.", links:[{link: "https://www.linkedin.com/in/hamada-alosh/", icon: "bi bi-linkedin"}]},
+    {name: "Hamada Alosh", role: "President", img: 'assests/members/sample_img.png', description:"A 3rd year Software Engineering Student with a passion for networking and a like for functional programming.", links:[{link: "https://www.linkedin.com/in/hamada-alosh/", icon: "bi bi-linkedin"}]},
 
-    {name: "Ayushi Badiyani", role: "Vice President", img: image, description:"A 3rd year Computing Science Student with a passion for data science", links:[{link: "https://www.linkedin.com/in/ayushi-badiyani/", icon: "bi bi-linkedin"}]},
+    {name: "Ayushi Badiyani", role: "Vice President", img: 'assests/members/sample_img.png', description:"A 3rd year Computing Science Student with a passion for data science", links:[{link: "https://www.linkedin.com/in/ayushi-badiyani/", icon: "bi bi-linkedin"}]},
 
-    {name: "Cameron Bell", role: "Technical Officer", img: image, description:"Pretties boy of them all.", links:[{link: "https://www.linkedin.com/in/bell-cameron/", icon: "bi bi-linkedin"}]},
+    {name: "Cameron Bell", role: "Technical Officer", img: 'assests/members/sample_img.png', description:"Pretties boy of them all.", links:[{link: "https://www.linkedin.com/in/bell-cameron/", icon: "bi bi-linkedin"}]},
 
-    {name: "Shelly Master", role: "Treasurer", img: image, description:"A Cyber Security Graduate with experience in hosting academia events with a passion.", links:[{link: "https://www.linkedin.com/in/shelly-master-47b89b185/", icon: "bi bi-linkedin"}]},
+    {name: "Shelly Master", role: "Treasurer", img: 'assests/members/sample_img.png', description:"A Cyber Security Graduate with experience in hosting academia events with a passion.", links:[{link: "https://www.linkedin.com/in/shelly-master-47b89b185/", icon: "bi bi-linkedin"}]},
 
-    {name: "Charles Watson", role: "Events Coordinator", img: image, description:"Passionate about java, cloud networking, solving problems using new technology and software.", links:[{link: "https://www.linkedin.com/in/charles-watson-3b7903189/", icon: "bi bi-linkedin"}]},
+    {name: "Charles Watson", role: "Events Coordinator", img: 'assests/members/sample_img.png', description:"Passionate about java, cloud networking, solving problems using new technology and software.", links:[{link: "https://www.linkedin.com/in/charles-watson-3b7903189/", icon: "bi bi-linkedin"}]},
     
-    {name: "Kelechi Nwokeabia", role: "Events Coordinator", img: image, description:"The mum of the group", links:[{link: "https://www.linkedin.com/in/kelechi-nwokeabia-657013247/", icon: "bi bi-linkedin"}]},
+    {name: "Kelechi Nwokeabia", role: "Events Coordinator", img: 'assests/members/sample_img.png', description:"The mum of the group", links:[{link: "https://www.linkedin.com/in/kelechi-nwokeabia-657013247/", icon: "bi bi-linkedin"}]},
 ];
 
 function Committee() {

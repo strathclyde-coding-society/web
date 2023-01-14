@@ -1,10 +1,8 @@
 import React from 'react'
 
 import Button from '../components/Button';
-import image from '../assests/events/sample_img.jpg'
 
 function EventFullDetails(props) {
-  console.log(props)
   //  {title: "CV Workshop", img: "../assests/events/sample_img.jpg", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9",maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem Workshop dolor sit:"},
   // ^ current data structure
 
@@ -18,12 +16,12 @@ function EventFullDetails(props) {
           <i className="bi bi-x-lg text-xl"></i>
         </button>
       </div>
-      <div className="p-5">
+
         <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-          <div className="md:5/12 lg:w-5/12">
-            <img className="rounded object-cover h-96 w-96" src={image}/>
+          <div className="md:5/12 lg:w-1/2 md:border-r border-b border-slate-50 md:border-b-0">
+            <img className="rounded object-cover lg:max-h-96 lg:max-w-96 lg:float-right p-5" src={props.event.img}/>
           </div>
-          <div className="md:7/12 lg:w-6/12">
+          <div className="md:7/12 lg:w-1/2 text-center p-5">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-slate-50">{props.event.headline}</h1>
             <h2 className="text-xs text-indigo-600 tracking-widest font-medium title-font mb-1">Time: {props.event.date} | {props.event.time}</h2>
             <a href={props.event.maps_link} className="text-xs text-indigo-600 tracking-widest font-medium title-font mb-1">Place: {props.event.location}</a>
@@ -34,7 +32,6 @@ function EventFullDetails(props) {
           </div>
         </div>
       </div>
-    </div>
   )
 }
 

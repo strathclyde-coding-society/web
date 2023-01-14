@@ -5,14 +5,17 @@ import Button from '../components/Button';
 import Event from '../components/Event';
 import EventFullDetails from '../components/EventFullDetails';
 
+
 const events = [
-    {title: "CV Workshop", headline:"Ayo come sus this out", img: "../assests/events/sample_img.png", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
-    {title: "Refresher Social", headline:"Ayo come sus this out", img: "../assests/events/sample_img.png", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
-    {title: "AI Workshop", headline:"Ayo come sus this out", img: "../assests/events/sample_img.png", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
-    {title: "Coding Cafe with EME", headline:"Ayo come sus this out", img: "../assests/events/sample_img.png", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
-    {title: "Front-End Workshop", headline:"Ayo come sus this out", img: "../assests/events/sample_img.png", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
-    {title: "Back-End Workshop", headline:"Ayo come sus this out", img: "../assests/events/sample_img.png", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
+    {title: "CV Workshop", headline:"Ayo come sus this out", img: "assests/events/sample_img.jpg", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
+    {title: "Refresher Social", headline:"Ayo come sus this out", img: "assests/events/sample_img.jpg", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
+    {title: "AI Workshop", headline:"Ayo come sus this out", img: "assests/events/sample_img.jpg", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
+    {title: "Coding Cafe with EME", headline:"Ayo come sus this out", img: "assests/events/sample_img.jpg", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
+    {title: "Front-End Workshop", headline:"Ayo come sus this out", img: "assests/events/sample_img.jpg", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
+    {title: "Back-End Workshop", headline:"Ayo come sus this out", img: "%PUBLIC_URL%/assests/events/sample_img.jpg", href: "#", date: "12/12/22", time: "6PM - Late", location:"Committee Room No.9", maps_link:"https://goo.gl/maps/mHfiMHtxQwq2tw2H7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!"},
 ];
+
+//const events = [];
 
 function Events() {
     const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -81,13 +84,20 @@ function Events() {
                             <p className="md:w-2/3 w-1/3 mx-auto leading-relaxed text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita necessitatibus inventore ipsa, consequatur, vel libero voluptates nulla odio culpa quasi ratione. Odit minima natus eum perspiciatis mollitia molestiae iure.</p>
                         </div>
                         <div className="mb-20">
-                            <ol className="relative border-l border-indigo-600">                  
+                            <ol className="relative border-l border-indigo-600">  
+                            {events.length > 0 &&                
                                 <TimelineEvents />
+                            }
                             </ol>
                         </div>
                     
-                        <div className="flex flex-wrap">
-                            <GridEvents />
+                        <div className="flex flex-col items-center md:flex-wrap md:flex-row">
+                            {events.length > 0 &&
+                                <GridEvents />
+                            }
+                            {events.length == 0 && 
+                                <h1 className="text-2xl font-medium title-font mb-4 text-slate-50 w-full text-center">No upcoming events!</h1>
+                            }
                         </div>
                     </div>
                 </div>
