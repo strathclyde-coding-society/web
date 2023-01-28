@@ -1,0 +1,62 @@
+{
+    "Ayushi Badiyani": {
+        "description": "A 3rd year Computing Science Student with a passion for data science",
+        "image": "assests/members/sample_img.png",
+        "links": [
+            {
+                "linkedin": "https://www.linkedin.com/in/ayushi-badiyani/"
+            }
+        ],
+        "role": "Vice President"
+    },
+    "Cameron Bell": {
+        "description": "Pretties boy of them all.",
+        "image": "assests/members/sample_img.png",
+        "links": [
+            {
+                "linkedin": "https://www.linkedin.com/in/bell-cameron/"
+            }
+        ],
+        "role": "Technical Officer"
+    },
+    "Charles Watson": {
+        "description": "Passionate about java, cloud networking, solving problems using new technology and software",
+        "image": "assests/members/sample_img.png",
+        "links": [
+            {
+                "linkedin": "https://www.linkedin.com/in/charles-watson-3b7903189/"
+            }
+        ],
+        "role": "Events Coordinator"
+    },
+    "Kelechi Nwokeabia": {
+        "description": "The mum of the group",
+        "image": "assests/members/sample_img.png",
+        "links": [
+            {
+                "linkedin": "https://www.linkedin.com/in/kelechi-nwokeabia-657013247/"
+            }
+        ],
+        "role": "Events Coordinator"
+    },
+    "Hamada Alosh": {
+        "description": "A 3rd year Software Engineering Student with a passion for networking and a like for functional programming.",
+        "image": "assests/members/sample_img.png",
+        "links": [
+            {
+                "linkedin": "https://www.linkedin.com/in/bell-cameron/"
+            }
+        ],
+        "role": "President"
+    },
+    "Shelly Master": {
+        "description": "A Cyber Security Graduate with experience in hosting academia events with a passion",
+        "image": "assests/members/sample_img.png",
+        "links": [
+            {
+                "linkedin": "https://www.linkedin.com/in/shelly-master-47b89b185/"
+            }
+        ],
+        "role": "Treasurer"
+    }
+}
