@@ -25,7 +25,7 @@ class Modal extends React.Component {
     render() {
         var button;
         if (this.props.closedByDefault) { 
-            var button = <button id='modal-open-btn' onClick={(event) => this.showModal(event)}><i className="bi bi-info-square animate-pulse text-3xl"></i></button>; 
+            var button = <button id='modal-open-btn' className="hover:scale-125 transition ease-in-out delay-50" onClick={(event) => this.showModal(event)}><i className="bi bi-info-square animate-pulse text-3xl "></i></button>; 
             // var button = <Button content="Learn more" size="small" onClick={(event) => this.showModal(event)}/>
         }
         return(
@@ -50,7 +50,7 @@ class Modal extends React.Component {
                                         <div className="flex justify-right">
                                         {this.props.data.collabs.map(collab => {
                                             return (
-                                                <a href={collab.link}>
+                                                <a href={collab.link} target="_blank" rel="noopener noreferrer">
                                                 <img class="h-7 w-7 mr-1" src={collab.icon}/>
                                                 </a>
                                                 )})}
@@ -72,21 +72,25 @@ class Modal extends React.Component {
                                 <div className="col-span-1 sm:col-span-2 row-span-3 sm:row-span-1">
                                     <div className="flex flex-col sm:flex-row justify-around">
                                         {/* Ticket */}
-                                        <div className="animate-pulse flex flex-col items-center">
+                                        <div className="animate-pulse flex flex-col items-center hover:scale-125 transition ease-in-out delay-50 relative">
                                         <a href={this.props.data.ticketLink} target="_blank" rel="noopener noreferrer">
-                                        <i className="bi bi-ticket text-4xl sm:text-6xl justify-center"/>
+                                        <i className="bi bi-ticket text-4xl sm:text-6xl justify-center text-indigo-700 absolute blur-sm"/>
+                                        <i className="bi bi-ticket text-4xl sm:text-6xl justify-center relative"/>
                                         </a>
                                         <a href={this.props.data.ticketLink} target="_blank" rel="noopener noreferrer">
-                                        <p className="text-center">{this.props.data.ticketPrice}</p>
+                                        <p className="text-center text-indigo-700 absolute blur-sm">{this.props.data.ticketPrice}</p>
+                                        <p className="text-center relative">{this.props.data.ticketPrice}</p>
                                         </a>
                                         </div>
                                         {/* Location */}
-                                        <div className="animate-pulse flex flex-col items-center">
+                                        <div className="animate-pulse flex flex-col items-center hover:scale-125 transition ease-in-out delay-50 relative">
                                         <a href={this.props.data.locationLink} target="_blank" rel="noopener noreferrer">
-                                        <i className="bi bi-geo-alt text-4xl sm:text-6xl justify-center"/>
+                                        <i className="bi bi-geo-alt text-4xl sm:text-6xl justify-center text-indigo-700 absolute blur-sm"/>
+                                        <i className="bi bi-geo-alt text-4xl sm:text-6xl justify-center relative"/>
                                         </a>
                                         <a href={this.props.data.locationLink} target="_blank" rel="noopener noreferrer">
-                                        <p className="text-center">{this.props.data.locationName}</p>
+                                        <p className="text-center text-indigo-600 absolute blur-sm">{this.props.data.locationName}</p>
+                                        <p className="text-center relative">{this.props.data.locationName}</p>
                                         </a>
                                         </div>
                                         {/* Date */}

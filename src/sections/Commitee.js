@@ -18,11 +18,11 @@ class Member extends React.Component {
                         <p className="uppercase tracking-wide text-sm text-indigo-600 font-semibold">{this.props.data.role}</p>
                         <p className="block mt-1 text-lg leading-tight font-medium text-slate-50 hover:underline">{this.props.name}</p>
                         <p className="mt-2 text-slate-400">{this.props.data.description}</p>
-                        <div className="mt-3">
+                        <div className="mt-3 relative">
                             {this.props.data.links.map((element, key) => (
                                 <>
                                     {Object.entries(element).map(([link, value]) => (
-                                        <a className={icons[link]} href={value} key={key}></a>
+                                        <a className={icons[link]  + " hover:scale-125 transition ease-in-out delay-50"} href={value} key={key}></a>
                                     ))}
                                 </>
                             ))}
