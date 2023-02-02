@@ -3,30 +3,32 @@ import React from 'react';
 import committee from '../data/committee.json';
 
 const icons = {
-    'linkedin': 'bi bi-linkedin'
+    'linkedin': 'bi bi-linkedin',
+    'twitter': 'bi bi-twitter',
+    'github': 'bi bi-github'
 };
 
 class Member extends React.Component {
     render() {
         return (
             <div className="max-w-md mx-auto overflow-hidden md:max-w-2xl mt-4">
-                <div className="md:flex">
-                    <div className="md:shrink-0">
-                        <img className="h-48 w-full object-cover md:h-full md:w-48 rounded" src={this.props.data.image} alt="avatar"/>
+                <div className="grid grid-cols-3 md:flex">
+                    <div className="md:shrink-0 pl-9">
+                        <img className="h-48 w-48 object-cover md:h-48 md:w-48 rounded" src={this.props.data.image} alt="avatar"/>
                     </div>
-                    <div className="p-8">
+                    <div className="px-8 col-span-2">
                         <p className="uppercase tracking-wide text-sm text-indigo-600 font-semibold">{this.props.data.role}</p>
-                        <p className="block mt-1 text-lg leading-tight font-medium text-slate-50 hover:underline">{this.props.name}</p>
-                        <p className="mt-2 text-slate-400">{this.props.data.description}</p>
-                        <div className="mt-3 relative">
+                        <div className="mt-3 flex">
+                        <p className="block mt-1 text-lg leading-tight font-medium text-slate-50 hover:underline pt-1">{this.props.name}</p>
                             {this.props.data.links.map((element, key) => (
                                 <>
                                     {Object.entries(element).map(([link, value]) => (
-                                        <a className={icons[link]  + " hover:scale-125 transition ease-in-out delay-50"} href={value} key={key}></a>
+                                        <a className={icons[link]  + " pl-2 pt-2 text-indigo-600 float-right"} target="_blank" rel="noopener noreferrer" href={value} key={key}></a>
                                     ))}
                                 </>
                             ))}
                         </div>
+                        <p className="mt-2 text-slate-400">{this.props.data.description}</p>
                     </div>
                 </div>
             </div>
