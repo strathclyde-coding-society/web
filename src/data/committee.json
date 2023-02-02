@@ -1,7 +1,17 @@
-{
+{   "Hamada Alosh": {
+        "description": "A 3rd year Software Engineering Student with a passion for networking and a like for functional programming.",
+        "image": "assests/members/HamadaA.jpg",
+        "links": [
+            {
+                "linkedin": "https://www.linkedin.com/in/hamada-alosh/",
+                "github": "https://github.com/Hamada735"
+            }
+        ],
+        "role": "President"
+    },
     "Ayushi Badiyani": {
         "description": "A 3rd year Computing Science Student with a passion for data science",
-        "image": "assests/members/sample_img.png",
+        "image": "assests/members/AyushiB.jpg",
         "links": [
             {
                 "linkedin": "https://www.linkedin.com/in/ayushi-badiyani/"
@@ -11,7 +21,7 @@
     },
     "Cameron Bell": {
         "description": "Pretties boy of them all.",
-        "image": "assests/members/sample_img.png",
+        "image": "assests/members/CameronB.jpg",
         "links": [
             {
                 "linkedin": "https://www.linkedin.com/in/bell-cameron/"
@@ -21,7 +31,7 @@
     },
     "Charles Watson": {
         "description": "Passionate about java, cloud networking, solving problems using new technology and software",
-        "image": "assests/members/sample_img.png",
+        "image": "assests/members/CharlesW.jpg",
         "links": [
             {
                 "linkedin": "https://www.linkedin.com/in/charles-watson-3b7903189/"
@@ -31,7 +41,7 @@
     },
     "Kelechi Nwokeabia": {
         "description": "The mum of the group",
-        "image": "assests/members/sample_img.png",
+        "image": "assests/members/KelechiN.jpg",
         "links": [
             {
                 "linkedin": "https://www.linkedin.com/in/kelechi-nwokeabia-657013247/"
@@ -39,24 +49,26 @@
         ],
         "role": "Events Coordinator"
     },
-    "Hamada Alosh": {
-        "description": "A 3rd year Software Engineering Student with a passion for networking and a like for functional programming.",
-        "image": "assests/members/sample_img.png",
-        "links": [
-            {
-                "linkedin": "https://www.linkedin.com/in/bell-cameron/"
-            }
-        ],
-        "role": "President"
-    },
+    
     "Shelly Master": {
         "description": "A Cyber Security Graduate with experience in hosting academia events with a passion",
-        "image": "assests/members/sample_img.png",
+        "image": "assests/members/ShellyM.jpg",
         "links": [
             {
                 "linkedin": "https://www.linkedin.com/in/shelly-master-47b89b185/"
             }
         ],
         "role": "Treasurer"
+    },
+    "Sophie McCartney": {
+        "description": "A Cyber Security Graduate with experience in hosting academia events with a passion",
+        "image": "assests/members/SophieM.jpg",
+        "links": [
+            {
+                "linkedin": "https://www.linkedin.com/in/sophie-mccartney/",
+                "twitter": "https://twitter.com/sophmccartney_"
+            }
+        ],
+        "role": "Social Media Coord"
     }
 }
