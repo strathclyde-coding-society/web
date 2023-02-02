@@ -15,9 +15,11 @@ class Event extends React.Component {
                     <div className="col-span-5 md:col-span-4 ml-4">
                         <p className={"uppercase tracking-wide font-semibold " + (next ? "text-green-600":"text-indigo-600 text-xs ")}>{(next ? "next ":"") + this.props.data.type }</p>
                         <p className={"text-slate-50 font-bold "+ (next ? " text-2xl ":"text-xl")}>{this.props.title}</p>
-                        <p className={"text-slate-400 "+ (next ? "text-xl":"")}>{this.props.data.timestamp}</p>
+                        <p className={"text-slate-400 "+ (next ? "text-xl":"")}>{this.props.data.date + " | " + this.props.data.time}</p>
                         <p className={"text-slate-400 "+ (next ? "text-xl":"")}>{this.props.data.location}</p>
-                        <Modal data={this.props.data} closedByDefault={true} title={this.props.title} />
+                    </div>
+                    <div className="m-auto">
+                    <Modal data={this.props.data} closedByDefault={true} title={this.props.title} />
                     </div>
                </div>
             </div>  

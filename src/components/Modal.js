@@ -25,7 +25,7 @@ class Modal extends React.Component {
     render() {
         var button;
         if (this.props.closedByDefault) { 
-            var button = <button id='modal-open-btn' onClick={(event) => this.showModal(event)}><i className="bi bi-info-square"></i></button>; 
+            var button = <button id='modal-open-btn' onClick={(event) => this.showModal(event)}><i className="bi bi-info-square animate-pulse text-3xl"></i></button>; 
             // var button = <Button content="Learn more" size="small" onClick={(event) => this.showModal(event)}/>
         }
         return(
@@ -42,16 +42,19 @@ class Modal extends React.Component {
 
                             <div className="grid grid-rows-3 grid-flow-col gap-4 p-6">
                                 {/* Left side */}
-                                <div className="row-span-3">
+                                <div className="row-span-3 col-span-2">
                                     {/* Top row */}
-                                    <div className="flex flex-row justify-between border-b-2 border-slate-50">
+                                    <div className="sm:flex flex-row justify-between border-b-2 border-slate-50">
                                         <p>{this.props.data.room} | {this.props.data.type}</p>
+
+                                        <div className="flex justify-right">
                                         {this.props.data.collabs.map(collab => {
                                             return (
-                                            <a href={collab.link}>
-                                                <img class="h-5 w-5" src={collab.icon}/>
+                                                <a href={collab.link}>
+                                                <img class="h-7 w-7 mr-1" src={collab.icon}/>
                                                 </a>
                                                 )})}
+                                        </div>
                                     </div>
                                     {/* Description */}
                                     <p className="pt-3">{this.props.data.description}</p>
@@ -66,18 +69,29 @@ class Modal extends React.Component {
                                 </div>
 
                                 {/* Icons */}
-                                <div className="col-span-2">
+                                <div className="col-span-1 sm:col-span-2 row-span-3 sm:row-span-1">
                                     <div className="flex flex-col sm:flex-row justify-around">
-                                        <div className=" flex flex-col items-center">
+                                        {/* Ticket */}
+                                        <div className="animate-pulse flex flex-col items-center">
+                                        <a href={this.props.data.ticketLink} target="_blank" rel="noopener noreferrer">
+                                        <i className="bi bi-ticket text-4xl sm:text-6xl justify-center"/>
+                                        </a>
+                                        <a href={this.props.data.ticketLink} target="_blank" rel="noopener noreferrer">
+                                        <p className="text-center">{this.props.data.ticketPrice}</p>
+                                        </a>
+                                        </div>
+                                        {/* Location */}
+                                        <div className="animate-pulse flex flex-col items-center">
                                         <a href={this.props.data.locationLink} target="_blank" rel="noopener noreferrer">
-                                        <i className="bi bi-geo-alt text-6xl justify-center"/>
+                                        <i className="bi bi-geo-alt text-4xl sm:text-6xl justify-center"/>
                                         </a>
                                         <a href={this.props.data.locationLink} target="_blank" rel="noopener noreferrer">
                                         <p className="text-center">{this.props.data.locationName}</p>
                                         </a>
                                         </div>
+                                        {/* Date */}
                                         <div className=" flex flex-col items-center">  
-                                        <i className="bi bi-calendar-event text-6xl"/>
+                                        <i className="bi bi-calendar-event text-4xl sm:text-6xl"/>
                                         <p className="text-center">{this.props.data.date}</p>
                                         </div>
                                     </div>
