@@ -1,5 +1,5 @@
 {
-    "CV Workshop 1": {
+    "Re-Social": {
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!",
         "image": "assests/events/sample_img.jpg",
         "locationAddress": "123 AddressStreet Av., Glasgow, G1 5UW",
@@ -18,7 +18,7 @@
         
         "collabs": [{"icon":"assests/events/eme_logo.png","link":"www.google.com"}]
     },
-    "CV Workshop 2": {
+    "AI Workshop": {
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!",
         "image": "assests/events/sample_img.jpg",
         "locationAddress": "123 AddressStreet Av., Glasgow, G1 5UW",
