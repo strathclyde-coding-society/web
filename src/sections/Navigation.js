@@ -19,7 +19,7 @@ class Navigation extends React.Component {
             <nav className="bg-black px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0">
                 <div className="container flex flex-wrap items-center justify-between mx-auto">
                     <a className="flex items-center" href="/">
-                        <img className="h-[4.5rem] w-[4.5rem] mr-3 hover:scale-125 transition ease-in-out delay-100" src={logo} alt="logo"/>
+                        <img className="h-[4.5rem] w-[4.5rem] mr-3 hover:scale-110 transition ease-in-out delay-0" src={logo} alt="logo"/>
                     </a>
                     <div className="flex md:order-2">
                         <Button content="Join us now" href="https://www.strathunion.com/groups/find-a-society/society/coding/" newPage="True" size="medium"/>

@@ -18,7 +18,7 @@ class About extends React.Component {
                                     <p className="mt-6 leading-relaxed text-slate-400">The Strathclyde Coding welcomes everyone regardless of their background, gender or religion. If you are a woman or a member of the LGBTQ+ community consider also joining <a href="https://www.strathunion.com/groups/find-a-society/society/strathwit/" className="text-indigo-600">StrathWIT</a></p>
                                     <p className="mt-4 leading-relaxed text-slate-400"> Check out our socials</p>
 
-                                    <div className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start  text-5xl text-indigo-600">
+                                    <div className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start pt-3 text-5xl text-indigo-600">
                                         <div className="hover:scale-125 transition ease-in-out delay-50">
                                         <a  href="https://discord.com/invite/zbPVc68kX7" target="_blank" rel="noopener noreferrer"><i className="bi bi-discord ml-1 px-1"></i></a>
                                         </div>
