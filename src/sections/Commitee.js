@@ -1,60 +1,60 @@
 import React from 'react';
 
-const members = [
-    {name: "Lorem ipsum", role: "Lorem, ipsum.", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "#", linkedin: "#", twitter: "#"},
-    {name: "Lorem ipsum", role: "Lorem, ipsum.", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "#", linkedin: "#", twitter: "#"},
-    {name: "Lorem ipsum", role: "Lorem, ipsum.", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "#", linkedin: "#", twitter: "#"},
-    {name: "Lorem ipsum", role: "Lorem, ipsum.", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "#", linkedin: "#", twitter: "#"},
-    {name: "Lorem ipsum", role: "Lorem, ipsum.", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "#", linkedin: "#", twitter: "#"},
-    {name: "Lorem ipsum", role: "Lorem, ipsum.", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "#", linkedin: "#", twitter: "#"},
-    {name: "Lorem ipsum", role: "Lorem, ipsum.", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "#", linkedin: "#", twitter: "#"},
-    {name: "Lorem ipsum", role: "Lorem, ipsum.", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "#", linkedin: "#", twitter: "#"},
-    {name: "Lorem ipsum", role: "Lorem, ipsum.", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "#", linkedin: "#", twitter: "#"},
-    {name: "Lorem ipsum", role: "Lorem, ipsum.", img: "https://www.zooborns.com/.a/6a010535647bf3970b02a2eec93591200d-800wi", github: "#", linkedin: "#", twitter: "#"},
-];
+import committee from '../data/committee.json';
 
-function Committee() {
-    const Members = () => {
-        return( 
-            members.map(member => {
-                return(
-                    <div className="p-4 lg:w-1/2">
-                        <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                            <img className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src={member.img} alt="avatar"/>
-                            <div className="flex-grow md:p-4">
-                                <h2 className="title-font font-medium text-lg text-slate-50">{member.name}</h2>
-                                <h3 className="text-gray-500 mb-3 text-sm">{member.role}</h3>
-                                <p className="mb-4 hidden md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, est?</p>
-                                <div className="inline-flex">
-                                    <i className="bi bi-twitter"></i>
-                                    <i className="bi bi-twitter ml-1"></i>
-                                    <i className="bi bi-twitter ml-1"></i>
-                                </div>
-                            </div>
+const icons = {
+    'linkedin': 'bi bi-linkedin',
+    'twitter': 'bi bi-twitter',
+    'github': 'bi bi-github'
+};
+
+class Member extends React.Component {
+    render() {
+        return (
+            <div className="max-w-md mx-auto overflow-hidden md:max-w-2xl mt-4">
+                <div className="grid grid-cols-3 md:flex">
+                    <div className="md:shrink-0 pl-9">
+                        <img className="h-48 w-48 object-cover md:h-48 md:w-48 rounded" src={this.props.data.image} alt="avatar"/>
+                    </div>
+                    <div className="px-8 col-span-2">
+                        <p className="uppercase tracking-wide text-sm text-indigo-600 font-semibold">{this.props.data.role}</p>
+                        <div className="mt-3 flex">
+                        <p className="block mt-1 text-lg leading-tight font-medium text-slate-50 hover:underline pt-1">{this.props.name}</p>
+                            {this.props.data.links.map((element, key) => (
+                                <>
+                                    {Object.entries(element).map(([link, value]) => (
+                                        <a className={icons[link]  + " pl-2 pt-2 text-indigo-600 float-right"} target="_blank" rel="noopener noreferrer" href={value} key={key}></a>
+                                    ))}
+                                </>
+                            ))}
                         </div>
-                    </div>
-                )
-            })  
-        );
-    }  
-
-    return (
-        <section id="commitee" className="bg-black w-screen overflow-x-hidden flex flex-col items-center">
-            <div className="flex flex-col justify-center h-full w-[60rem] gap-2">
-                <div className="container px-5 py-24 mx-auto text-slate-400">
-                    <div className="flex flex-col text-center w-full mb-20">
-                        <h2 className="text-xs text-indigo-600 tracking-widest font-medium title-font mb-1">Lorem ipsum dolor sit amet.</h2>
-                        <h1 className="text-2xl font-medium title-font mb-4 text-slate-50">Lorem ipsum dolor sit amet.</h1>
-                        <p className="md:w-2/3 w-1/3 mx-auto leading-relaxed text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita necessitatibus inventore ipsa, consequatur, vel libero voluptates nulla odio culpa quasi ratione. Odit minima natus eum perspiciatis mollitia molestiae iure.</p>
-                    </div>
-                    <div className="flex md:flex-wrap md:flex-row flex-col -m-4">
-                        <Members/>
+                        <p className="mt-2 text-slate-400">{this.props.data.description}</p>
                     </div>
                 </div>
             </div>
-        </section> 
-    );
-  }
+        );
+    }
+}
+
+class Committee extends React.Component {
+    render() {
+        return (
+            <section id="committee" className="bg-black w-screen overflow-x-hidden flex flex-col items-center">
+                <div className="flex flex-col justify-center h-full w-[60rem] gap-2">
+                    <div className="container px-5 py-24 mx-auto text-slate-400">
+                        <div className="flex flex-col text-center w-full mb-20">
+                            <h2 className="text-xs text-indigo-600 tracking-widest font-medium title-font mb-1">For students by students</h2>
+                            <h1 className="text-2xl font-medium title-font mb-4 text-slate-50">Meet the Committee</h1>
+                        </div>
+                        {Object.keys(committee).map((person, key) => (
+                            <Member data={committee[person]} name={person} key={key} />
+                        ))}
+                    </div>
+                </div>
+            </section> 
+        );
+    }
+}
   
 export default Committee;
   

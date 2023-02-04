@@ -9,5 +9,5 @@ module.exports = {
   fontFamily: {
     'sans': ['Inter', 'sans-serif']
   },
-  plugins: []
+  plugins: [require('flowbite/plugin')]
 }

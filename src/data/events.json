@@ -1,0 +1,117 @@
+{
+    "Re-Social": {
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!",
+        "image": "assests/events/sample_img.jpg",
+
+        "locationAddress": "18 John St, Glasgow G1 1JQ",
+        "locationLink": "https://goo.gl/maps/pxMxBBHiDa5KypF37",
+        "locationName": "Committee Room No.9",
+        "room":"Function Room",
+        "type": "Social",
+        
+        "ticketPrice": "Free",
+        "ticketLink": "https://www.eventbrite.com/o/strathclyde-coding-society-54743419153",
+        
+        "timestamp": "Thurs, Jan 26 . 7:30PM - 10:00PM",
+        "date": "26/01/2023",
+        "time": "7:30PM - 10:00PM",
+        "next": "no",
+        
+        "collabs": [{"icon":"assests/events/eme_logo.png","link":"https://www.google.com"}]
+    },
+    "AI Workshop": {
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!",
+        "image": "assests/events/sample_img.jpg",
+        "locationAddress": "123 AddressStreet Av., Glasgow, G1 5UW",
+        "locationLink": "https://www.google.com/maps",
+        "locationName": "Strath Union",
+        "room":"LT510",
+        "type": "Workshop",
+        
+        "ticketPrice": "Free",
+        "ticketLink": "https://www.eventbrite.com/o/strathclyde-coding-society-54743419153",
+        
+        "timestamp": "Fri, Mar 11 . 8:00AM - 9:30AM",
+        "date": "11/03/2023",
+        "time": "8:00AM - 9:30AM",
+        "next": "yes",
+        
+        "collabs": [{"icon":"assests/events/eme_logo.png","link":"https://www.google.com"}]
+    },
+    "CV Workshop": {
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!",
+        "image": "assests/events/sample_img.jpg",
+        "locationAddress": "123 AddressStreet Av., Glasgow, G1 5UW",
+        "locationLink": "https://www.google.com/maps",
+        "locationName": "Strath Union",
+        "room":"LT510",
+        "type": "Workshop",
+        
+        "ticketPrice": "Free",
+        "ticketLink": "https://www.eventbrite.com/o/strathclyde-coding-society-54743419153",
+        
+        "timestamp": "Fri, Mar 11 . 8:00AM - 9:30AM",
+        "date": "11/03/2023",
+        "time": "8:00AM - 9:30AM",
+        "next": "no",
+        
+        "collabs": [{"icon":"assests/events/eme_logo.png","link":"https://www.google.com/maps"},{"icon":"assests/events/eme_logo.png","link":"https://www.google.com/maps"},{"icon":"assests/events/eme_logo.png","link":"https://www.google.com/maps"}]
+    },
+    "CV Workshop 4": {
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!",
+        "image": "assests/events/sample_img.jpg",
+        "locationAddress": "123 AddressStreet Av., Glasgow, G1 5UW",
+        "locationLink": "https://www.google.com/maps",
+        "locationName": "Strath Union",
+        "room":"LT510",
+        "type": "Workshop",
+        
+        "ticketPrice": "Free",
+        "ticketLink": "https://www.eventbrite.com/o/strathclyde-coding-society-54743419153",
+        
+        "timestamp": "Fri, Mar 11 . 8:00AM - 9:30AM",
+        "date": "11/03/2023",
+        "time": "8:00AM - 9:30AM",
+        "next": "no",
+        
+        "collabs": [{"icon":"assests/events/eme_logo.png","link":"https://www.google.com"}]
+    },
+    "CV Workshop 5": {
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!",
+        "image": "assests/events/sample_img.jpg",
+        "locationAddress": "123 AddressStreet Av., Glasgow, G1 5UW",
+        "locationLink": "https://www.google.com/maps",
+        "locationName": "Strath Union",
+        "room":"LT510",
+        "type": "Workshop",
+        
+        "ticketPrice": "Free",
+        "ticketLink": "https://www.eventbrite.com/o/strathclyde-coding-society-54743419153",
+        
+        "timestamp": "Fri, Mar 11 . 8:00AM - 9:30AM",
+        "date": "11/03/2023",
+        "time": "8:00AM - 9:30AM",
+        "next": "no",
+        
+        "collabs": [{"icon":"assests/events/eme_logo.png","link":"https://www.google.com/maps"}]
+    },
+    "CV Workshop 6": {
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!",
+        "image": "assests/events/sample_img.jpg",
+        "locationAddress": "123 AddressStreet Av., Glasgow, G1 5UW",
+        "locationLink": "https://www.google.com/maps",
+        "locationName": "Strath Union",
+        "room":"LT510",
+        "type": "Workshop",
+        
+        "ticketPrice": "Free",
+        "ticketLink": "https://www.eventbrite.com/o/strathclyde-coding-society-54743419153",
+        
+        "timestamp": "Fri, Mar 11 . 8:00AM - 9:30AM",
+        "date": "11/03/2023",
+        "time": "8:00AM - 9:30AM",
+        "next": "no",
+        
+        "collabs": [{"icon":"assests/events/eme_logo.png","link":"https://www.google.com/maps"}]
+    }
+}
