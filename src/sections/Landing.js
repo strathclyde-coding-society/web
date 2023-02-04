@@ -6,10 +6,6 @@ class Landing extends React.Component {
     render() {
         return (
             <header className="bg-black w-screen h-screen overflow-x-hidden flex flex-col items-center space-y-2">
-                <div style="color: rgba(0, 0, 0, 0.2); --darkreader-inline-color:rgba(255, 253, 249, 0.2);" data-darkreader-inline-color=""><div id="htbspiral" style="position: fixed;z-index: -1;"><canvas width="1026" height="935" id="canvas"></canvas></div></div>
-                <div class="jumbotron" id="jumbotron"></div>
-                <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js" integrity="sha256-CnNQJd80jPuIDyeQRRq7+Wgt+++Kl0dZLt4ETNmxMIw=" crossorigin="anonymous"></script>
-                <script src="lib/index.min.js" defer=""></script>
                 <div className="flex flex-col justify-center items-center h-[80rem] max-w-[60rem]">
                     <section id="header" className="py-24 flex items-center min-h-screen justify-center">
                         <div className="mx-auto max-w-[43rem]">

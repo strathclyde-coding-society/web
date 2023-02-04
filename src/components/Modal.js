@@ -25,9 +25,13 @@ class Modal extends React.Component {
     render() {
         var button;
         if (this.props.closedByDefault) { 
-            var button = <button id='modal-open-btn' className="hover:scale-125 transition ease-in-out delay-50" onClick={(event) => this.showModal(event)}><i className="bi bi-info-square animate-pulse text-3xl "></i></button>; 
+            button = <button id='modal-open-btn' className="hover:scale-110 transition ease-in-out delay-50" onClick={(event) => this.showModal(event)}><i className="bi bi-info-square animate-pulse text-3xl "></i></button>; 
             // var button = <Button content="Learn more" size="small" onClick={(event) => this.showModal(event)}/>
         }
+        var ticketVis =""; 
+        if(this.props.data.ticketPrice==""){ticketVis=" hidden"}; 
+        var speakerVis =""; 
+        if(this.props.data.speakerName==""){speakerVis=" hidden"}; 
         return(
             <span>
 		        {button}
@@ -57,7 +61,7 @@ class Modal extends React.Component {
                                         </div>
                                     </div>
                                     {/* Description */}
-                                    <p className="pt-3">{this.props.data.description}</p>
+                                    <p className="pt-3 text-xl">{this.props.data.description}</p>
                                 </div>
 
                                 {/* Right side */}
@@ -65,38 +69,49 @@ class Modal extends React.Component {
 
                                 {/* Image */}
                                 <div className="hidden row-span-2 col-span-2 sm:flex justify-center p-4">
-                                    <img className="hidden sm:block h-10/12 w-10/12 object-cover  rounded" src="assests/events/sample_img.jpg" alt="avatar"/>
+                                    <img className="hidden sm:block h-10/12 w-10/12 object-cover  rounded" src={this.props.data.image} alt="avatar"/>
                                 </div>
 
                                 {/* Icons */}
                                 <div className="col-span-1 sm:col-span-2 row-span-3 sm:row-span-1">
                                     <div className="flex flex-col sm:flex-row justify-around">
                                         {/* Ticket */}
-                                        <div className="animate-pulse flex flex-col items-center hover:scale-125 transition ease-in-out delay-50 relative">
+                                        <div className={" flex flex-col items-center hover:scale-110 transition ease-in-out delay-50 relative pb-2" + ticketVis}>
                                         <a href={this.props.data.ticketLink} target="_blank" rel="noopener noreferrer">
-                                        <i className="bi bi-ticket text-4xl sm:text-6xl justify-center text-indigo-700 absolute blur-sm"/>
-                                        <i className="bi bi-ticket text-4xl sm:text-6xl justify-center relative"/>
+                                        <i className="bi bi-ticket text-4xl sm:text-5xl justify-center text-indigo-700 absolute blur-sm"/>
+                                        <i className="bi bi-ticket text-4xl sm:text-5xl justify-center relative"/>
                                         </a>
                                         <a href={this.props.data.ticketLink} target="_blank" rel="noopener noreferrer">
-                                        <p className="text-center text-indigo-700 absolute blur-sm">{this.props.data.ticketPrice}</p>
-                                        <p className="text-center relative">{this.props.data.ticketPrice}</p>
+                                        <p className="text-center underline underline-offset-4 text-indigo-700 absolute blur-sm">{this.props.data.ticketPrice}</p>
+                                        <p className="text-center underline underline-offset-4 relative">{this.props.data.ticketPrice}</p>
                                         </a>
                                         </div>
                                         {/* Location */}
-                                        <div className="animate-pulse flex flex-col items-center hover:scale-125 transition ease-in-out delay-50 relative">
+                                        <div className=" flex flex-col items-center hover:scale-110 transition ease-in-out delay-50 relative pb-2">
                                         <a href={this.props.data.locationLink} target="_blank" rel="noopener noreferrer">
-                                        <i className="bi bi-geo-alt text-4xl sm:text-6xl justify-center text-indigo-700 absolute blur-sm"/>
-                                        <i className="bi bi-geo-alt text-4xl sm:text-6xl justify-center relative"/>
+                                        <i className="bi bi-geo-alt text-4xl sm:text-5xl justify-center text-indigo-700 absolute blur-sm"/>
+                                        <i className="bi bi-geo-alt text-4xl sm:text-5xl justify-center relative"/>
                                         </a>
                                         <a href={this.props.data.locationLink} target="_blank" rel="noopener noreferrer">
-                                        <p className="text-center text-indigo-600 absolute blur-sm">{this.props.data.locationName}</p>
-                                        <p className="text-center relative">{this.props.data.locationName}</p>
+                                        <p className="text-center underline underline-offset-4 text-indigo-600 absolute blur-sm">{this.props.data.locationName}</p>
+                                        <p className="text-center underline underline-offset-4 relative">{this.props.data.locationName}</p>
                                         </a>
                                         </div>
                                         {/* Date */}
-                                        <div className=" flex flex-col items-center">  
-                                        <i className="bi bi-calendar-event text-4xl sm:text-6xl"/>
+                                        <div className=" flex flex-col items-center pb-2">  
+                                        <i className="bi bi-calendar-event text-4xl sm:text-5xl"/>
                                         <p className="text-center">{this.props.data.date}</p>
+                                        </div>
+                                        {/* Speaker */}
+                                        <div className={" flex flex-col items-center hover:scale-110 transition ease-in-out delay-50 relative pb-2" + speakerVis}>
+                                        <a href={this.props.data.speakerLink} target="_blank" rel="noopener noreferrer">
+                                        <i className="bbi bi-person text-4xl sm:text-5xl justify-center text-indigo-700 absolute blur-sm"/>
+                                        <i className="bbi bi-person text-4xl sm:text-5xl justify-center relative"/>
+                                        </a>
+                                        <a href={this.props.data.speakerLink} target="_blank" rel="noopener noreferrer">
+                                        <p className="text-center underline underline-offset-4 text-indigo-700 absolute blur-sm">{this.props.data.speakerName}</p>
+                                        <p className="text-center underline underline-offset-4 relative">{this.props.data.speakerName}</p>
+                                        </a>
                                         </div>
                                     </div>
                                 </div>
