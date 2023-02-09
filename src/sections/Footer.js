@@ -10,6 +10,7 @@ class Footer extends React.Component {
                         <a href="https://discord.com/invite/zbPVc68kX7" target="_blank" rel="noopener noreferrer"><i className="bi bi-discord ml-1 px-1"></i></a>
                         <a href="https://www.instagram.com/strathcoding/" target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram ml-1 px-1"></i></a>
                         <a href="https://www.linkedin.com/company/strathcoding/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin ml-1 px-1"></i></a>
+                        <a href="https://linktr.ee/strathcoding" target="_blank" rel="noopener noreferrer"><i className="bi bi-linktree ml-1 px-1"></i></a>
                     </div>
                 </div>
             </footer>

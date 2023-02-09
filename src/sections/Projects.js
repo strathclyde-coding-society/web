@@ -1,13 +1,12 @@
 import React from 'react';
 
-import Event from '../components/Event';
+import Project from '../components/Project';
 
 import events from '../data/events.json';
 
 
 
-
-class Events extends React.Component {
+class Projects extends React.Component {
     render() {
         const empty = Object.keys(events).length > 0;
         return (
@@ -23,7 +22,7 @@ class Events extends React.Component {
                             {empty ? (
                                 <>
                                     {Object.entries(events).map(([title, elements], key) => (
-                                        <Event data={elements} key={key} title={title} />
+                                        <Project data={elements} key={key} title={title} />
                                     ))}
                                 </>
                             ) : (
@@ -37,4 +36,4 @@ class Events extends React.Component {
     }
 }
   
-export default Events;
+export default Projects;

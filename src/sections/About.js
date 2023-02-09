@@ -3,8 +3,8 @@ import React from 'react';
 class About extends React.Component {
     render() {
         return (
-            <section id="about" className="bg-black w-screen flex flex-col items-center pb-[5rem]">
-                <div className="flex flex-col justify-center items-center h-full w-full">
+            <section id="about" className="bg-black w-screen flex flex-col items-center pb-[5rem] z-10">
+                <div className="flex flex-col justify-center items-center h-full w-full z-10">
                     <div className="pt-16 text-center sm:text-left">  
                         <div className="container m-auto px-6 text-slate-50 md:px-12 xl:px-6">
                             <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">

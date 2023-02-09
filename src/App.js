@@ -34,6 +34,16 @@ class App extends React.Component {
               <Footer />
             </div>
           } path="/"/>
+          <Route element={
+            <div className="w-screen h-screen overflow-x-hidden text-gray-400">
+              <Navigation />
+              <Landing />
+              <About />
+              <Events />
+              <Committee />
+              <Footer />
+            </div>
+          } path="/web/"/>
           <Route path="/403" element={<Error_403/>} />
           <Route path="*" element={<Error_404/>}/>
           <Route path="/500" element={<Error_500/>} />

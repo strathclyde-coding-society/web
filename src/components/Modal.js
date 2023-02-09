@@ -39,12 +39,12 @@ class Modal extends React.Component {
                     <div id="modal-container" className="container mx-auto w-11/12 h-11/12 md:w-2/3  md:h-2/3">
                         {/* Modal body */}
                         <div id="modal" className="relative bg-black shadow-md rounded border border-indigo-600 ">
-                            <div className="flex flex-row justify-between px-6 pt-6">
+                            <div className="flex flex-row justify-between px-8 pt-6">
                                 <h3 className="text-xl lg:text-2xl font-semibold text-slate-50">{this.props.title}</h3>
                                 <button className="cursor-pointer text-gray-400 hover:text-slate-50 transition duration-150 ease-in-out rounded focus:ring-2 focus:outline-none focus:ring-indigo-600 p-1" onClick={(event) => this.hideModal(event)}><i className="bi bi-x-lg"></i></button>
                             </div>
 
-                            <div className="grid grid-rows-3 grid-flow-col gap-4 p-6">
+                            <div className="grid grid-flow-col gap-4 p-8">
                                 {/* Left side */}
                                 <div className="row-span-3 col-span-2">
                                     {/* Top row */}
@@ -61,7 +61,7 @@ class Modal extends React.Component {
                                         </div>
                                     </div>
                                     {/* Description */}
-                                    <p className="pt-3 text-xl">{this.props.data.description}</p>
+                                    <p className="pt-3 text-2xl">{this.props.data.description}</p>
                                 </div>
 
                                 {/* Right side */}
@@ -69,7 +69,7 @@ class Modal extends React.Component {
 
                                 {/* Image */}
                                 <div className="hidden row-span-2 col-span-2 sm:flex justify-center p-4">
-                                    <img className="hidden sm:block h-10/12 w-10/12 object-cover  rounded" src={this.props.data.image} alt="avatar"/>
+                                    <img className="hidden sm:block h-9/12 w-9/12 object-cover  rounded" src={this.props.data.image} alt="avatar"/>
                                 </div>
 
                                 {/* Icons */}
@@ -103,7 +103,7 @@ class Modal extends React.Component {
                                         <p className="text-center">{this.props.data.date}</p>
                                         </div>
                                         {/* Speaker */}
-                                        <div className={" flex flex-col items-center hover:scale-110 transition ease-in-out delay-50 relative pb-2" + speakerVis}>
+                                        <div className={" flex flex-col items-center hover:scale-110 transition ease-in-out delay-50 relative pb-2 pr-4" + speakerVis}>
                                         <a href={this.props.data.speakerLink} target="_blank" rel="noopener noreferrer">
                                         <i className="bbi bi-person text-4xl sm:text-5xl justify-center text-indigo-700 absolute blur-sm"/>
                                         <i className="bbi bi-person text-4xl sm:text-5xl justify-center relative"/>
