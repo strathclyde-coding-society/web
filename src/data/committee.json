@@ -1,5 +1,5 @@
 {   "Hamada Alosh": {
-        "description": "A 3rd year Software Engineering Student with a passion for networking and a like for functional programming.",
+        "description": "Functional programming >",
         "image": "assests/members/HamadaA.jpg",
         "links": [
             {
@@ -30,7 +30,7 @@
         "role": "Technical Officer"
     },
     "Charles Watson": {
-        "description": "Passionate about java, cloud networking, solving problems using new technology and software",
+        "description": "LOVES FOOTBALL",
         "image": "assests/members/CharlesW.jpg",
         "links": [
             {
@@ -40,7 +40,7 @@
         "role": "Events Coordinator"
     },
     "Kelechi Nwokeabia": {
-        "description": "The mum of the group",
+        "description": "The support of the group",
         "image": "assests/members/KelechiN.jpg",
         "links": [
             {
@@ -51,7 +51,7 @@
     },
     
     "Shelly Master": {
-        "description": "A Cyber Security Graduate with experience in hosting academia events with a passion",
+        "description": "A Cyber Security Graduate.",
         "image": "assests/members/ShellyM.jpg",
         "links": [
             {
@@ -61,7 +61,7 @@
         "role": "Treasurer"
     },
     "Sophie McCartney": {
-        "description": "A Cyber Security Graduate with experience in hosting academia events with a passion",
+        "description": "A UI/UX enthusiast",
         "image": "assests/members/SophieM.jpg",
         "links": [
             {
