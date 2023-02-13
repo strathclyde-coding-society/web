@@ -10,7 +10,7 @@ const icons = {
 class Member extends React.Component {
     render() {
         return (
-            <div className="max-w-md mx-auto overflow-hidden md:max-w-2xl mt-4 pr-10">
+            <div className="max-w-md mx-auto overflow-hidden md:max-w-2xl mt-4 pr-10 pl-2 sm:pl-0">
                 <div className="grid grid-cols-3 md:flex">
                     <div className="md:shrink-0 pl-9">
                         <img className="h-48 w-48 object-cover md:h-48 md:w-48 rounded" src={this.props.data.image} alt="avatar"/>

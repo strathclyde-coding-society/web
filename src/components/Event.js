@@ -6,7 +6,7 @@ class Event extends React.Component {
     render() {
         let next = this.props.data.next == "yes";
         return (
-            <div className={"max-w-md mx-auto overflow-hidden md:max-w-2xl border-l-2 "+ (next ? "border-green-600":"border-indigo-600")}>
+            <div className={"max-w-md mx-auto overflow-hidden pl-2 sm:pl-0 pr-2 sm:pr-0 md:max-w-2xl border-l-2 "+ (next ? "border-green-600":"border-indigo-600")}>
                 <div className={"grid grid-cols-6 p-5 gap-y-2 " + (next ? "pl-8":"")}>
                     <div className="col-span-5 md:col-span-4 ml-4">
                         <p className={"uppercase tracking-wide font-semibold " + (next ? "text-green-600":"text-indigo-600 text-xs ")}>{(next ? "next ":"") + this.props.data.type }</p>
