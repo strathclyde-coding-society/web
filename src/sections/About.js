@@ -17,20 +17,20 @@ class About extends React.Component {
                                     <p className="mt-6 leading-relaxed text-slate-400">The Strathclyde Coding Society is one of the biggest societies at strathclyde - a student led body that aims to encourage students from all backgrounds to increase their coding skills, we do this by hosting workshops and social events to help students connect with each other and industry!</p>
                                     <p className="mt-6 leading-relaxed text-slate-400">The Strathclyde Coding welcomes everyone regardless of their background, gender or religion. If you are a woman or a member of the LGBTQ+ community consider also joining <a href="https://www.strathunion.com/groups/find-a-society/society/strathwit/" className="text-indigo-600">StrathWIT</a></p>
                                     <p className="mt-4 leading-relaxed text-slate-400"> Check out our socials</p>
-
-                                    <div className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start pt-3 text-5xl text-indigo-600">
-                                        <div className="hover:scale-125 transition ease-in-out delay-50">
-                                        <a  href="https://discord.com/invite/zbPVc68kX7" target="_blank" rel="noopener noreferrer"><i className="bi bi-discord ml-1 px-1"></i></a>
+                                    <div className="flex flex-col sm:flex-row justify-between items-center my-4">
+                                        <div className="inline-flex text-5xl text-indigo-600 p-3">
+                                            <a className="hover:scale-125 transition ease-in-out delay-50" href="https://discord.com/invite/zbPVc68kX7" target="_blank" rel="noopener noreferrer"><i className="bi bi-discord ml-1 px-1"></i></a>
+                                            <a className="hover:scale-125 transition ease-in-out delay-50" href="https://www.instagram.com/strathcoding/" target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram ml-1 px-1"></i></a>
+                                            <a className="hover:scale-125 transition ease-in-out delay-50"href="https://www.linkedin.com/company/strathcoding/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin ml-1 px-1"></i></a>
                                         </div>
-                                        <div className="hover:scale-125 transition ease-in-out delay-50">
-                                        <a  href="https://www.instagram.com/strathcoding/" target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram ml-1 px-1"></i></a>
-                                        </div>
-                                        <div className="hover:scale-125 transition ease-in-out delay-50">
-                                        <a  href="https://www.linkedin.com/company/strathcoding/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin ml-1 px-1"></i></a>
+                                        <div className="flex flex-col justify-center items-center p-3">
+                                            <div className="flex space-x-3 items-center">
+                                                <span className="text-6xl sm:text-8xl font-bold">400</span>
+                                                <span className="text-2xl sm:text-4xl font-bold">+</span>
+                                            </div>
+                                            <p>Members</p>
                                         </div>
                                     </div>
-
-                                    
                                 </div>
                             </div>
                         </div>
