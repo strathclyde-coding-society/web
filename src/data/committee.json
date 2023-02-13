@@ -1,5 +1,5 @@
 {   "Hamada Alosh": {
-        "description": "Functional programming >",
+        "description": "Functional programming 😎",
         "image": "assests/members/HamadaA.jpg",
         "links": [
             {
@@ -9,6 +9,17 @@
         ],
         "role": "President"
     },
+    "Sophie McCartney": {
+        "description": "A UI/UX enthusiast",
+        "image": "assests/members/SophieM.jpg",
+        "links": [
+            {
+                "linkedin": "https://www.linkedin.com/in/sophie-mccartney/",
+                "twitter": "https://twitter.com/sophmccartney_"
+            }
+        ],
+        "role": "Vice President"
+    },
     "Ayushi Badiyani": {
         "description": "A 3rd year Computing Science Student with a passion for data science",
         "image": "assests/members/AyushiB.jpg",
@@ -17,7 +28,7 @@
                 "linkedin": "https://www.linkedin.com/in/ayushi-badiyani/"
             }
         ],
-        "role": "Vice President"
+        "role": "Events Coordinator"
     },
     "Cameron Bell": {
         "description": "Pretties boy of them all.",
@@ -59,16 +70,6 @@
             }
         ],
         "role": "Treasurer"
-    },
-    "Sophie McCartney": {
-        "description": "A UI/UX enthusiast",
-        "image": "assests/members/SophieM.jpg",
-        "links": [
-            {
-                "linkedin": "https://www.linkedin.com/in/sophie-mccartney/",
-                "twitter": "https://twitter.com/sophmccartney_"
-            }
-        ],
-        "role": "Social Media Coord"
     }
+    
 }
