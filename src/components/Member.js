@@ -18,7 +18,7 @@ class Member extends React.Component {
                     <div className="px-8 col-span-2">
                         <p className="uppercase tracking-wide text-sm text-indigo-600 font-semibold">{this.props.data.role}</p>
                         <div className="mt-3 flex">
-                            <p className="block mt-1 text-lg leading-tight font-medium text-slate-50 hover:underline pt-1">{this.props.name}</p>
+                            <p className="block mt-1 text-lg leading-tight font-medium text-slate-50 pt-1">{this.props.name}</p>
                             {this.props.data.links.map((element, key) => (
                                 <>
                                     {Object.entries(element).map(([link, value]) => (
