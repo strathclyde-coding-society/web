@@ -1,5 +1,5 @@
 {   "Hamada Alosh": {
-        "description": "Functional programming 😎",
+        "description": "Average Haskell enthusiast 😎",
         "image": "assests/members/HamadaA.jpg",
         "links": [
             {
@@ -14,8 +14,7 @@
         "image": "assests/members/SophieM.jpg",
         "links": [
             {
-                "linkedin": "https://www.linkedin.com/in/sophie-mccartney/",
-                "twitter": "https://twitter.com/sophmccartney_"
+                "linkedin": "https://www.linkedin.com/in/sophie-mccartney/"
             }
         ],
         "role": "Vice President"
@@ -31,7 +30,7 @@
         "role": "Events Coordinator"
     },
     "Cameron Bell": {
-        "description": "Pretties boy of them all.",
+        "description": "I enjoy creating, whether that be a website, games, tools - or simply solving problems.",
         "image": "assests/members/CameronB.jpg",
         "links": [
             {
@@ -41,7 +40,7 @@
         "role": "Technical Officer"
     },
     "Charles Watson": {
-        "description": "LOVES FOOTBALL",
+        "description": "Passionate about java, cloud networking, solving problems using new technology and software",
         "image": "assests/members/CharlesW.jpg",
         "links": [
             {
@@ -70,6 +69,15 @@
             }
         ],
         "role": "Treasurer"
+    },
+    "Alexandra Bodnar": {
+        "description": "A creator not just a consumer of tech",
+        "image": "assests/members/AlexB.jpg",
+        "links": [
+            {
+                "linkedin": "https://www.linkedin.com/in/alexandra-bodnar-988000198/"
+            }
+        ],
+        "role": "Events Coordinator"
     }
-    
 }
